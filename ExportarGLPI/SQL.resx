@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InsertCrm" xml:space="preserve">
+    <value>INSERT INTO TB_CRM (NUM_CRM, NOM_MEDICO)
+VALUES(@NUM_CRM, @NOM_MEDICO)</value>
+  </data>
+  <data name="SelectCrm" xml:space="preserve">
+    <value>SELECT * FROM TB_CRM WHERE NUM_CRM = @NUM_CRM</value>
+  </data>
+  <data name="SelectXmlAnd" xml:space="preserve">
+    <value>SELECT COD_CHAVE_ACESSO
+FROM TB_VENDA
+WHERE SUBSTRING(CAST(REPLACE(CAST(TXT_VENDA_XML AS NVARCHAR(MAX)),'utf-8','utf-16') AS VARCHAR(MAX)),0,9) &lt;&gt; '&lt;nfeProc'
+AND TIP_STATUS IN ('EF', 'AN')
+AND IND_ORIGEM_CUPOM = 'NCR'
+AND DAT_MOVIMENTO = CAST(GETDATE() -1 AS DATE)</value>
+  </data>
+  <data name="SelectXmlNcr" xml:space="preserve">
+    <value>SELECT CHAVEACESSO, CAST(REPLACE(CAST(xml AS NVARCHAR(MAX)),'utf-8','utf-16') AS XML) AS XML, CAST(REPLACE(CAST(xmlCanc AS NVARCHAR(MAX)),'utf-8','utf-16') AS XML) AS XML_CA FROM siacnfe..NFNFE
+WHERE CHAVEACESSO IN 
+(
+'33220328763118003963650070000124969241781670',
+'33220328763118004420650060000132941809139852',
+'33220328763118004420650070000187111504995546',
+'33220328763118002053650120000182731930086854',
+'33220328763118000190651490000076361351376050',
+'33220328763118002053650140000163431775661820',
+'33220328763118000190651510000110481490992913',
+'33220328763118001243650230000109571067790214',
+'33220328763118001677650130000186511826596223',
+'33220328763118003297650050000116961175803983',
+'33220328763118001162650310000089981791214960',
+'33220328763118001910650120000130651677171092',
+'33220328763118001596650120000189251791448360',
+'33220328763118001677650130000186481916965877',
+'33220328763118003610650060000149041532854260',
+'33220328763118002053650140000181521619965393',
+'33220328763118000786650260000114781985036110',
+'33220328763118002053650110000190311815385868',
+'33220328763118003459650070000114951465992819',
+'33220328763118002304650120000139351122357243',
+'33220328763118002053650130000175891372157773',
+'33220328763118000190651570000268971151061596',
+'33220328763118002991650070000131881071559829',
+'33220328763118003378650080000151961002132494',
+'33220228763118004420650060000114741412567566',
+'33220228763118000867650310000129211907403144',
+'33220328763118002568650160000093211733545197',
+'33220228763118001162650310000083161908934906',
+'33220328763118000190651480000149521069048842',
+'33220228763118000948650330000086531956619011',
+'33220328763118001405650200000141011983985107',
+'33220228763118003459650060000096671735556683',
+'33220328763118003882650050000128051561185810',
+'33220228763118000867650330000129631538257439',
+'33220328763118003297650040000120331545181057',
+'33220228763118001324650210000114971979556756',
+'33220228763118000867650310000128391641032742',
+'33220228763118001910650120000104991174206735',
+'33220228763118000948650360000085521198256857',
+'33220228763118002304650130000061671588347386',
+'33220228763118001910650140000109491409999860',
+'33220228763118002649650110000122951776590116',
+'33220328763118001405650200000127791343057930',
+'33220228763118003106650060000117291342700758',
+'33220328763118000867650340000150741871054936',
+'33220228763118004005650080000076931614647893',
+'33220228763118001596650140000145811039104368',
+'33220228763118004005650070000132711392528958',
+'33220228763118002053650130000141871727882425',
+'33220228763118004005650060000155021756434379',
+'33220328763118003882650070000097541397269760',
+'33220228763118003530650080000090181448820575',
+'33220228763118002134650130000090031584167201',
+'33220328763118001324650180000120831869814343',
+'33220328763118000867650320000132331313833011',
+'33220328763118003530650080000099571276179991',
+'33220328763118001324650190000161381973032580',
+'33220228763118001324650210000118411181625885',
+'33220228763118001243650230000092341631017410',
+'33220328763118002215650110000073511952603699',
+'33220328763118000271650320000206011299314794',
+'33220228763118003700650070000065881316638470',
+'33220328763118000433650390000067801464444198',
+'33220328763118002304650110000117421994212244',
+'33220528763118003882650060000198171150771186',
+'33220328763118002800650060000094071489360188',
+'33220228763118002487650100000110841662923697',
+'33220328763118000433650350000121451184865485',
+'33220228763118001405650180000097981925282346',
+'33220328763118000352650310000202191017946614',
+'33220328763118003700650080000083521801504329',
+'33220328763118001324650190000183871287437783',
+'33220228763118003882650050000102241492671480',
+'33220328763118001910650140000130681823555770',
+'33220228763118003882650060000103081589886269',
+'33220328763118000271650320000203331239636873',
+'33220228763118002134650150000107321857858313',
+'33220328763118001162650270000076611274330348',
+'33220328763118002991650060000129771805148330',
+'33220328763118003530650090000126761049725526',
+'33220228763118002134650130000089641453233081',
+'33220328763118000190651510000108441745508078',
+'33220528763118002134650150000189311223897600',
+'33220328763118004420650080000201821068543208',
+'33220328763118003882650070000093731402845496',
+'33220328763118000433650380000108011444820080',
+'33220328763118003459650050000113781005667419',
+'33220328763118001839650120000144281560750970',
+'33220328763118001910650150000127241433732052',
+'33220328763118004420650070000184471653901884',
+'33220328763118004188650110000188681266745618',
+'33220528763118004269650010000149741487098630',
+'33220328763118000433650360000108781039425182',
+'33220228763118000867650300000101021316402885',
+'33220328763118000271650310000310191297686213',
+'33220228763118000786650260000092621864362936',
+'33220328763118003106650040000153651914822725',
+'33220228763118002991650080000126091793737449',
+'33220328763118003378650080000146571385706353',
+'33220328763118004188650090000223641949874993',
+'33220328763118000433650370000100601455549902'
+)</value>
+  </data>
+  <data name="UpdateCrm" xml:space="preserve">
+    <value>UPDATE TB_CRM
+	SET NOM_MEDICO = @NOM_MEDICO
+WHERE NUM_CRM = @NUM_CRM</value>
+  </data>
+  <data name="UpdateXmlAnd" xml:space="preserve">
+    <value>UPDATE V
+   SET TXT_VENDA_XML = CAST(REPLACE(CAST(@TXT_VENDA_XML AS NVARCHAR(MAX)),'utf-8','utf-16') AS XML),
+	   TXT_CANCELAMENTO_XML = CAST(REPLACE(CAST(@TXT_CANCELAMENTO_XML AS NVARCHAR(MAX)),'utf-8','utf-16') AS XML)
+  FROM NOSSADRG_VENDA.DBO.TB_VENDA (NOLOCK) V
+ WHERE COD_CHAVE_ACESSO = @COD_CHAVE_ACESSO</value>
+  </data>
+</root>
